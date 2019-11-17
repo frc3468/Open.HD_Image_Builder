@@ -73,6 +73,9 @@ disable_overscan=1
 #max_framebuffer_height=1920
 max_framebuffers=2
 
+# Rotate Display
+display_rotate=2
+
 # uncomment to increase signal to HDMI, if you have interference,
 # blanking, or no display
 #config_hdmi_boost=4
@@ -88,15 +91,15 @@ gpu_mem=128
 # force gpu to run in turbo mode for less latency and jitter
 force_turbo=1
 
-# Set CPU speed to 900Mhz
-arm_freq=900
+# Set CPU speed to 1200Mhz
+arm_freq=1200
 
 # Set higher voltage for stability
 over_voltage=3
 
 # overclock CORE/GPU/SDRAM for less latency and higher data troughput
 gpu_freq=400
-sdram_freq=433
+sdram_freq=450
 
 # speed-up booting
 bootcode_delay=0

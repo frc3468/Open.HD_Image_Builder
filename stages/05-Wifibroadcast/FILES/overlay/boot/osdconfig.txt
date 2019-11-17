@@ -91,65 +91,65 @@
 #define BATT_GAUGE_POS_X 5
 #define BATT_GAUGE_POS_Y 5
 #define BATT_GAUGE_SCALE 1
-#define CELLS 3 // set to number of cells used
-#define CELL_MAX 4.20 // maximum cell voltage
-#define CELL_MIN 3.20 // minimum cell voltage
-#define CELL_WARNING1 3.50 // warning level 1 -> orange, low
-#define CELL_WARNING2 3.40 // warning level 2 -> red, critical
+#define CELLS 1 // set to number of cells used
+#define CELL_MAX 14.00 // maximum cell voltage
+#define CELL_MIN 8.00 // minimum cell voltage
+#define CELL_WARNING1 11.50 // warning level 1 -> orange, low
+#define CELL_WARNING2 10.00 // warning level 2 -> red, critical
 
-#define COMPASS
+#define COMPASS false
 #define COMPASS_POS_Y 87
 #define COMPASS_SCALE 1
 #define COMPASS_USECOG false // set to true to use course over ground (from gps) instead of magnetometer
 #define COMPASS_INAV false // set to true to fix Inav vs Ardupilot digit difference. Otherwise false
 
-#define ALTLADDER
+#define ALTLADDER false
 #define ALTLADDER_POS_X 83
 #define ALTLADDER_SCALE 1.1
 
-#define MSLALT
+#define MSLALT false
 #define MSLALT_POS_X 93
 #define MSLALT_POS_Y 29
 #define MSLALT_SCALE 0.6
 
-#define SPEEDLADDER
+#define SPEEDLADDER false
 #define SPEEDLADDER_POS_X 16
 #define SPEEDLADDER_SCALE 1.1
 #define SPEEDLADDER_USEAIRSPEED false // set to true to use GPS speed instead of airspeed
 
-#define AHI
+#define AHI false
 #define AHI_SCALE 1
 #define AHI_LADDER true // set to true to draw ladders above and below the center horizon line
 #define AHI_INVERT_ROLL -1 // default -1, set to 1 if roll moves in the wrong direction
 #define AHI_INVERT_PITCH 1 // default -1, set to 1 if pitch moves in the wrong direction
 #define AHI_SWAP_ROLL_AND_PITCH true // set to true to swap roll and pitch (Frsky and Smartport only)
 
-#define POSITION
+#define POSITION false
 #define POSITION_POS_X 75
 #define POSITION_POS_Y 5
 #define POSITION_SCALE 0.8
 
-#define SAT
+#define SAT false
 #define SAT_POS_X 64
 #define SAT_POS_Y 14
 #define SAT_SCALE 0.8
 
-#define DISTANCE
+#define DISTANCE false
 #define DISTANCE_POS_X 94
 #define DISTANCE_POS_Y 5
 #define DISTANCE_SCALE 1
 
-#define FLIGHTMODE
+#define FLIGHTMODE false
 #define FLIGHTMODE_POS_X 50
 #define FLIGHTMODE_POS_Y 6
 #define FLIGHTMODE_SCALE 1
 
-#define CLIMB
+#define CLIMB false
 #define CLIMB_POS_X 93
 #define CLIMB_POS_Y 24
 #define CLIMB_SCALE 0.6
 
-#define AIRSPEED
+#define AIRSPEED false
 #define AIRSPEED_POS_X 93
 #define AIRSPEED_POS_Y 21
 #define AIRSPEED_SCALE 0.6
@@ -159,7 +159,7 @@
 #define COURSE_OVER_GROUND_POS_Y 65
 #define COURSE_OVER_GROUND_SCALE 0.8
 
-#define GPSSPEED
+#define GPSSPEED false
 #define GPSSPEED_POS_X 93
 #define GPSSPEED_POS_Y 58
 #define GPSSPEED_SCALE 0.8
@@ -168,7 +168,7 @@
 #define WARNING_POS_Y 25
 
 // display of TOTALS
-#define TOTAL_AMPS true // set to false if you dont want to see this
+#define TOTAL_AMPS false // set to false if you dont want to see this
 #define TOTAL_AMPS_POS_X 24
 #define TOTAL_AMPS_POS_Y 5
 #define TOTAL_AMPS_SCALE 1

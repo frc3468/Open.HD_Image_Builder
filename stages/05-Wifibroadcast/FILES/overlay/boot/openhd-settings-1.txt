@@ -33,11 +33,11 @@ UseLDPC=N
 DATARATE_SECONDARY_8812AU=2
 
 # >>>>>>>>>>[TXPOWER-AIR/GROUND]-- For Atheros AR9271 or RTL8812/14AU Cards ONLY
-TxPowerAir=54
-TxPowerGround=54
+TxPowerAir=27
+TxPowerGround=27
 
 # >>>>>>>>>>[TXPOWER-RALINK]-- (Not confirmed Working]
-TXPOWER=2000
+TXPOWER=1000
 
 # >>>>>>>>>>[FEC (FORWARD ERROR CORRECTION)]-- (8/4/1024 default) 
 # *For higher bitrate and range, you can reduce FEC to "2" for example by setting (10/2/1024)
@@ -176,7 +176,7 @@ VIDEO_UDP_PORT2=5601
 # Set "Y" in conjunction with ATHEROS "Range" RC
 # Set "auto" for automatic detection. 
 # Set "N" to disable.
-CTS_PROTECTION=N
+CTS_PROTECTION=Y
 
 # >>>>>>>>>>[USB RC RANGE OR ENCRYPTION]-- 
 # For Atheros Cards use "Range" + CTS=Y
@@ -185,7 +185,7 @@ CTS_PROTECTION=N
 # to reliably work with Atheros/AR9271/Ath9k cards, this setting should provide better range. 
 # ***"Encryption" Is a more secure means of RC uplink and works with any wifi cards but may
 # Result in higher packet loss at longer ranges.
-EncryptionOrRange=Encryption
+EncryptionOrRange=Range
 
 # >>>>>>>>>>[RC JOYSTICK MODE OVER OPEN.HD SETTINGS]
 # Set this to "mavlink" to enable R/C over Open.HD using mavlink protocol or "msp" for MSP
@@ -193,7 +193,7 @@ EncryptionOrRange=Encryption
 # Set to "sumd" for Graupner SUMD, "ibus" for Flysky IBUS, "srxl" for Multiplex SRXL/XBUS
 # Mode B. Set to "disabled" to disable
 # **See joyconfig.txt for other settings, default settings work for Taranis in USB.
-RC=mavlink
+RC=msp
 
 # >>>>>>>>>>[DEDICATED WIFI-CARD UPLINK/RC MAC ADDR.]-- If different types of Ground wifi cards are used.
 # Set this if you have 1 High-Power ground card plus 1 or more lower power cards so that
@@ -278,7 +278,7 @@ Camera4ValueMax=2500
 # 0 Auto, 1 Analog, 2 HDMI
 DefaultAudioOut=0
 # Audio Enabled? "0"= Off "1"=ON
-IsAudioTransferEnabled=0
+IsAudioTransferEnabled=1
 # Audio Mic/Speaker Gains
 MicBoost=75
 SpeakersLevel=75
@@ -364,7 +364,7 @@ SmartSyncControlVia=joystick
 
 # >>>>>>>>>>[SECONDARY IP/USB CAMERA SETTINGS]--
 # Values: No, IP, USB
-SecondaryCamera=No
+SecondaryCamera=USB
 
 # >>>>>>>>>>[SECONDARY PIP CAMERA SWITCHER RC CHANNEL]--
 # IP or USB secondary camera. To use "IsBandSwicherEnabled=1" must be enabled
