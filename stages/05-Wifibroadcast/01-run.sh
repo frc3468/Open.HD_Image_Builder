@@ -11,7 +11,7 @@ pushd GIT
 MNT_DIR="${STAGE_WORK_DIR}/mnt"
 
 log "Download all Open.HD Sources"
-sudo git clone -b police-bot https://github.com/frc3468/Open.HD.git
+sudo git clone -b two-way-audio https://github.com/frc3468/Open.HD.git
 pushd Open.HD
 sudo git submodule update --init
 popd
